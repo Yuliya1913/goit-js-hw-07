@@ -57,6 +57,7 @@ modalImg.show()
 
   if (code === 'Escape') {
     modalImg.close();
+    document.removeEventListener('keydown', ({ code }));
   }
 
 })
